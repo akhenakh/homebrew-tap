@@ -5,7 +5,6 @@
 class Vduck < Formula
   desc "Simple terminal UI for DuckDB"
   homepage "https://github.com/akhenakh/vduck"
-  version "1.2.1"
   license "MIT"
 
   on_macos do
