@@ -8,23 +8,23 @@ class Ou < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/akhenakh/ou/releases/download/v0.1.1/ou_Darwin_arm64.tar.gz"
-      sha256 "15a3e426d08d86eac76f8c93e5eebcdbefcd774e9dd2826ce11a8107c9794911"
+      url "https://github.com/akhenakh/ou/releases/download/v0.1.2/ou_Darwin_arm64.tar.gz"
+      sha256 "f40bc4dd3d10946a698edb63fbef72050712c8d431997e92fdeae3408e71b21d"
     end
     on_intel do
-      url "https://github.com/akhenakh/ou/releases/download/v0.1.1/ou_Darwin_x86_64.tar.gz"
-      sha256 "00d3f1129372f5612eac49649098f41a5e5fb93fd883d2aa8f6c022314e1e023"
+      url "https://github.com/akhenakh/ou/releases/download/v0.1.2/ou_Darwin_x86_64.tar.gz"
+      sha256 "e140f6c8ae19b8c96fce07c2691c2ee3df56ce2e988a7d325a665d3c81280f5f"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/akhenakh/ou/releases/download/v0.1.1/ou_Linux_arm64.tar.gz"
-      sha256 "ac6e7ba7ca55060e82b538928ab5edcbb0ccd9741a3720c4ef54f7f9390f612a"
+      url "https://github.com/akhenakh/ou/releases/download/v0.1.2/ou_Linux_arm64.tar.gz"
+      sha256 "8eda774a1e951e1af164bb762e5dbdff9c7b9a497a9b1c4ea8562993779efdb6"
     end
     on_intel do
-      url "https://github.com/akhenakh/ou/releases/download/v0.1.1/ou_Linux_x86_64.tar.gz"
-      sha256 "569395e62f7fe3668da2fcefee0cc78254ccfa41d95156c278b5f1933bb4b5eb"
+      url "https://github.com/akhenakh/ou/releases/download/v0.1.2/ou_Linux_x86_64.tar.gz"
+      sha256 "0ccbfc95a58167e98ab975704fa2d07771c5e15b5fd9a93617a3c7a3981e78b9"
     end
   end
 
