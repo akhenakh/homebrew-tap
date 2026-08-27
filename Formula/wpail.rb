@@ -4,12 +4,11 @@
 class Wpail < Formula
   desc "Find what application is listening on a TCP/UDP port"
   homepage "https://github.com/akhenakh/wpail"
-  license "MIT"
-
   # Fallback for contexts with no dedicated build — there is no Darwin
   # x86_64 tarball since wpail is arm64-only on macOS by design.
   url "https://github.com/akhenakh/wpail/releases/download/v0.1/wpail_Linux_x86_64.tar.gz"
   sha256 "e824295bd9402625fbf46a2fca0d04caaf0c49da47a797910ae277a36d54b437"
+  license "MIT"
 
   on_macos do
     on_arm do
