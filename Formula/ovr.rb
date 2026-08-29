@@ -9,36 +9,36 @@ class Ovr < Formula
   on_macos do
     on_arm do
       url "https://github.com/akhenakh/ovr/releases/download/v0.1/ovr_Darwin_arm64.tar.gz"
-      sha256 "b725f4a50666d444c08ff08d819c3aeaac859fa4d989d2cd6f87452b2928cfdd"
+      sha256 "07c800178f4444b48bf2ec22dd2ad6c0e015aa85d0d73b8ba0fe3e458a5fc50a"
       resource "ovrui" do
         version "v0.1"
         url "https://github.com/akhenakh/ovr/releases/download/v0.1/ovrui_Darwin_arm64.tar.gz"
-        sha256 "a140ffa2ddf76d3b55d7b20214999a918b5b14ebb0836af95cf994c9fe24d78d"
+        sha256 "d9dd6d149c61a46591174a12e6eed0d34197551d4a2c557cac397f51ae53a407"
       end
     end
     on_intel do
       url "https://github.com/akhenakh/ovr/releases/download/v0.1/ovr_Darwin_x86_64.tar.gz"
-      sha256 "26c017f01d6e4d59181191ab1a003a6eabaf942169c9c8056a129893063f1ae9"
+      sha256 "7be73b1e840e81dca277fe810e6bc0a401870d184dd7829c31fe826c9e67ca85"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/akhenakh/ovr/releases/download/v0.1/ovr_Linux_arm64.tar.gz"
-      sha256 "e167aca74ca900cca3f18ad4980eacf7d041d67d22b883ec5015cdc2a244c65e"
+      sha256 "5db0873b36a6d39eff064fc43d490c8126d23ec64045688ad8198abf647e09d6"
       resource "ovrui" do
         version "v0.1"
         url "https://github.com/akhenakh/ovr/releases/download/v0.1/ovrui_Linux_arm64.tar.gz"
-        sha256 "66b5f53794d370abb95611927077a1656b17e44d5160708c9b14d7e164752eca"
+        sha256 "038966c2a03a19330d81045be2685e5765dc96ac73f91207229c8e3be1a9848b"
       end
     end
     on_intel do
       url "https://github.com/akhenakh/ovr/releases/download/v0.1/ovr_Linux_x86_64.tar.gz"
-      sha256 "68934bb7c59d69ff01b2222c05c09791d95cee3bedbc7062a304b577748692e0"
+      sha256 "2f3dba06e2354840bde7c32823620ac54ea829101dbea0d6067f7446facd3559"
       resource "ovrui" do
         version "v0.1"
         url "https://github.com/akhenakh/ovr/releases/download/v0.1/ovrui_Linux_x86_64.tar.gz"
-        sha256 "77d627e04d501640866c0a6367485cb37781716d64fdf15f6dfaa031babfbaa3"
+        sha256 "596c99992aa81140566c6e71b6db157076e096363cddff04388be36e60c59fdc"
       end
     end
   end
