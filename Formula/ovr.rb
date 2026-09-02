@@ -9,36 +9,36 @@ class Ovr < Formula
   on_macos do
     on_arm do
       url "https://github.com/akhenakh/ovr/releases/download/v0.2/ovr_Darwin_arm64.tar.gz"
-      sha256 "19029080473a59b76072d926f886ec836e7ba0f35c385c0b8eec3dc3931e63cf"
+      sha256 "9d8da42d2cac0662b948e658ab6b526876ef9797f5b5d4a081ae9f28d7e7c07f"
       resource "ovrui" do
         version "v0.2"
         url "https://github.com/akhenakh/ovr/releases/download/v0.2/ovrui_Darwin_arm64.tar.gz"
-        sha256 "6c1df88778aa4f02ff506fe72cf138cf1a4d229ac0954c758d419ab5f9672de3"
+        sha256 "0f30564cfbfc4dbeaa5b4f4e5c7945f5a70d3ec5389f7f026d73eb3e51e2c328"
       end
     end
     on_intel do
       url "https://github.com/akhenakh/ovr/releases/download/v0.2/ovr_Darwin_x86_64.tar.gz"
-      sha256 "59d48fc0762281f013acbad33d0ac86a0e3ba7f918ad5d2dcf3e777eb1242543"
+      sha256 "f544d4ebf594ad0a73c461c7aca40e90ea024bcd902c0ed146f00efb3626ab0e"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/akhenakh/ovr/releases/download/v0.2/ovr_Linux_arm64.tar.gz"
-      sha256 "87bcfb1bd4ee4351e97c727b71b87a7cfe76b51e89051ae055264c43fd2d6de2"
+      sha256 "7b4f834e81329d6b6ce8494ba64e2730be066ade63f48b44ed29cd95798d55e8"
       resource "ovrui" do
         version "v0.2"
         url "https://github.com/akhenakh/ovr/releases/download/v0.2/ovrui_Linux_arm64.tar.gz"
-        sha256 "865e00a86cf40371554fc5f82d0c5a886f820efc13abdfb2e34aa7d813076961"
+        sha256 "b233568ddcdf108d3a20c76302c58507807bed4afea278e2b445988696eafbef"
       end
     end
     on_intel do
       url "https://github.com/akhenakh/ovr/releases/download/v0.2/ovr_Linux_x86_64.tar.gz"
-      sha256 "4dc8cb85a0d6f7e3a9e8a210ca2c588a538aa683fdef9400500c458e9aad0e82"
+      sha256 "5caf06d276fa62e46a7ab97a1377aca43f5d6ec846efbd19a843af8a261c6405"
       resource "ovrui" do
         version "v0.2"
         url "https://github.com/akhenakh/ovr/releases/download/v0.2/ovrui_Linux_x86_64.tar.gz"
-        sha256 "7dbab0a401b49cb7cf1e9259b4f3abe1e68ea39dbea1d6bb0719428332c52001"
+        sha256 "052f48614eb4480023301fdbb59a090bf07c1f1eec1a13d3a11c068f3c0707fb"
       end
     end
   end
