@@ -8,37 +8,37 @@ class Ovr < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/akhenakh/ovr/releases/download/v0.1/ovr_Darwin_arm64.tar.gz"
-      sha256 "07c800178f4444b48bf2ec22dd2ad6c0e015aa85d0d73b8ba0fe3e458a5fc50a"
+      url "https://github.com/akhenakh/ovr/releases/download/v0.2/ovr_Darwin_arm64.tar.gz"
+      sha256 "19029080473a59b76072d926f886ec836e7ba0f35c385c0b8eec3dc3931e63cf"
       resource "ovrui" do
-        version "v0.1"
-        url "https://github.com/akhenakh/ovr/releases/download/v0.1/ovrui_Darwin_arm64.tar.gz"
-        sha256 "d9dd6d149c61a46591174a12e6eed0d34197551d4a2c557cac397f51ae53a407"
+        version "v0.2"
+        url "https://github.com/akhenakh/ovr/releases/download/v0.2/ovrui_Darwin_arm64.tar.gz"
+        sha256 "6c1df88778aa4f02ff506fe72cf138cf1a4d229ac0954c758d419ab5f9672de3"
       end
     end
     on_intel do
-      url "https://github.com/akhenakh/ovr/releases/download/v0.1/ovr_Darwin_x86_64.tar.gz"
-      sha256 "7be73b1e840e81dca277fe810e6bc0a401870d184dd7829c31fe826c9e67ca85"
+      url "https://github.com/akhenakh/ovr/releases/download/v0.2/ovr_Darwin_x86_64.tar.gz"
+      sha256 "59d48fc0762281f013acbad33d0ac86a0e3ba7f918ad5d2dcf3e777eb1242543"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/akhenakh/ovr/releases/download/v0.1/ovr_Linux_arm64.tar.gz"
-      sha256 "5db0873b36a6d39eff064fc43d490c8126d23ec64045688ad8198abf647e09d6"
+      url "https://github.com/akhenakh/ovr/releases/download/v0.2/ovr_Linux_arm64.tar.gz"
+      sha256 "87bcfb1bd4ee4351e97c727b71b87a7cfe76b51e89051ae055264c43fd2d6de2"
       resource "ovrui" do
-        version "v0.1"
-        url "https://github.com/akhenakh/ovr/releases/download/v0.1/ovrui_Linux_arm64.tar.gz"
-        sha256 "038966c2a03a19330d81045be2685e5765dc96ac73f91207229c8e3be1a9848b"
+        version "v0.2"
+        url "https://github.com/akhenakh/ovr/releases/download/v0.2/ovrui_Linux_arm64.tar.gz"
+        sha256 "865e00a86cf40371554fc5f82d0c5a886f820efc13abdfb2e34aa7d813076961"
       end
     end
     on_intel do
-      url "https://github.com/akhenakh/ovr/releases/download/v0.1/ovr_Linux_x86_64.tar.gz"
-      sha256 "2f3dba06e2354840bde7c32823620ac54ea829101dbea0d6067f7446facd3559"
+      url "https://github.com/akhenakh/ovr/releases/download/v0.2/ovr_Linux_x86_64.tar.gz"
+      sha256 "4dc8cb85a0d6f7e3a9e8a210ca2c588a538aa683fdef9400500c458e9aad0e82"
       resource "ovrui" do
-        version "v0.1"
-        url "https://github.com/akhenakh/ovr/releases/download/v0.1/ovrui_Linux_x86_64.tar.gz"
-        sha256 "596c99992aa81140566c6e71b6db157076e096363cddff04388be36e60c59fdc"
+        version "v0.2"
+        url "https://github.com/akhenakh/ovr/releases/download/v0.2/ovrui_Linux_x86_64.tar.gz"
+        sha256 "7dbab0a401b49cb7cf1e9259b4f3abe1e68ea39dbea1d6bb0719428332c52001"
       end
     end
   end
