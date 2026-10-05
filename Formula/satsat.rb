@@ -9,22 +9,22 @@ class Satsat < Formula
   on_macos do
     on_arm do
       url "https://github.com/akhenakh/gosatsat/releases/download/v0.2/satsat_0.2_Darwin_arm64.tar.gz"
-      sha256 "7e492539e5932748b77164afc1ba22ac556a63aedc53e93b575745e745ec9d2a"
+      sha256 "11e600338796805d8b1dca4d266979a224610b615b2edb16ca16353a0a64ba74"
     end
     on_intel do
       url "https://github.com/akhenakh/gosatsat/releases/download/v0.2/satsat_0.2_Darwin_x86_64.tar.gz"
-      sha256 "88d9493d7eb659df9ee52babeb299916cb7953a9f8cd7484d25837c18f25e762"
+      sha256 "06dc09771648f04842d92b4f179ff9e405f4355b187076760c0579a8e46a1169"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/akhenakh/gosatsat/releases/download/v0.2/satsat_0.2_Linux_arm64.tar.gz"
-      sha256 "9a4634d827f4a538673fab6f817c7af4f022ba361e73c115d485abdb760e84a2"
+      sha256 "74efe573c7fe2a20b461f493cdef4f1002ac0a43dd67c2f6f7f3f7778b3a09c5"
     end
     on_intel do
       url "https://github.com/akhenakh/gosatsat/releases/download/v0.2/satsat_0.2_Linux_x86_64.tar.gz"
-      sha256 "5bb8183aaf2eaa06787c1af35f46d3cdf4a63069dff196d980c57f5fbea01ab2"
+      sha256 "00ae4fbb12490b0b4d460339df9c264c6f6734f35c4ce8ed43c6af9586b01165"
     end
   end
 
