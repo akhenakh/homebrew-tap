@@ -10,12 +10,12 @@ class Satsat < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/akhenakh/gosatsat/releases/download/v0.5/satsat_0.5_Linux_arm64.tar.gz"
-      sha256 "9b19b86484dad236a84b070d42b5b938d3f61d016f536e50aff0413b9f20d911"
+      url "https://github.com/akhenakh/gosatsat/releases/download/v0.4/satsat_0.4_Linux_arm64.tar.gz"
+      sha256 "21909a6c2ba67eb8f4c6c35024fc405967c40ab3596df9b4f924c6f68da5c694"
     end
     on_intel do
-      url "https://github.com/akhenakh/gosatsat/releases/download/v0.5/satsat_0.5_Linux_x86_64.tar.gz"
-      sha256 "9c818a3a244b83bde6f011fe95ad2d6e9c033180a1ad73a623611cf07ac90e3f"
+      url "https://github.com/akhenakh/gosatsat/releases/download/v0.4/satsat_0.4_Linux_x86_64.tar.gz"
+      sha256 "777fe290963cde242431a21ecbf4df8dca7042c0ecd0ac473317d77c84875195"
     end
   end
 
