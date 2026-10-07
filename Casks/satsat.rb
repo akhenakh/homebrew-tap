@@ -7,10 +7,10 @@ cask "satsat" do
          intel: "96f3b687b6ce5ecf50dc9aaeeb7740e2e489a01d88ff1887c533e24072d40926"
 
   on_arm do
-    url "https://github.com/akhenakh/gosatsat/releases/download/v0.5/satsat_0.5_Darwin_arm64.tar.gz"
+    url "https://github.com/akhenakh/gosatsat/releases/download/v#{version}/satsat_#{version}_Darwin_arm64.tar.gz"
   end
   on_intel do
-    url "https://github.com/akhenakh/gosatsat/releases/download/v0.5/satsat_0.5_Darwin_x86_64.tar.gz"
+    url "https://github.com/akhenakh/gosatsat/releases/download/v#{version}/satsat_#{version}_Darwin_x86_64.tar.gz"
   end
 
   name "SatSat"
