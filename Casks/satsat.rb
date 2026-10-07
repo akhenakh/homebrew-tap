@@ -20,4 +20,10 @@ cask "satsat" do
   depends_on :macos
 
   app "SatSat.app"
+
+  # The release bundle is unsigned; give it an ad-hoc signature at install time
+  # so macOS has a stable code identity for it.
+  postflight_steps do
+    run "/usr/bin/codesign", args: ["--force", "--sign", "-", "{{appdir}}/SatSat.app"]
+  end
 end
