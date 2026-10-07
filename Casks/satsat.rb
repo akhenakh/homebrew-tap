@@ -17,7 +17,7 @@ cask "satsat" do
   desc "Native satellite pass tracker"
   homepage "https://github.com/akhenakh/gosatsat"
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "SatSat.app"
 end
