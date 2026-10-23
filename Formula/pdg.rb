@@ -14,9 +14,11 @@ class Pdg < Formula
   # tarball directly.
   depends_on :macos
 
-  on_intel do
-    url "https://github.com/akhenakh/pdg/releases/download/v0.2/pdg_Darwin_x86_64.tar.gz"
-    sha256 "666d711e665955293e60117d2c30c71aa19fc773688e590a906c85f96c7b2550"
+  on_macos do
+    on_intel do
+      url "https://github.com/akhenakh/pdg/releases/download/v0.2/pdg_Darwin_x86_64.tar.gz"
+      sha256 "666d711e665955293e60117d2c30c71aa19fc773688e590a906c85f96c7b2550"
+    end
   end
 
   def install
