@@ -6,8 +6,8 @@ class Pdg < Formula
   homepage "https://github.com/akhenakh/pdg"
   # The version is scanned from the release tag in the URL, so it must not be
   # declared explicitly. Apple Silicon is the default; on_intel overrides it.
-  url "https://github.com/akhenakh/pdg/releases/download/v0.2/pdg_Darwin_arm64.tar.gz"
-  sha256 "d26ac7940aa16ba622ea3305f8dd0bacaef2d4e3288f93386ce02524d0d42ab7"
+  url "https://github.com/akhenakh/pdg/releases/download/v0.2.1/pdg_Darwin_arm64.tar.gz"
+  sha256 "e5221b43d24b33d9d65d60b3268e2f64d71ebf65f2d3309a6e48f4eb8e5a84d7"
   license "Apache-2.0"
 
   # Homebrew on Linux is not supported; Linux users install the release
@@ -16,8 +16,8 @@ class Pdg < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/akhenakh/pdg/releases/download/v0.2/pdg_Darwin_x86_64.tar.gz"
-      sha256 "666d711e665955293e60117d2c30c71aa19fc773688e590a906c85f96c7b2550"
+      url "https://github.com/akhenakh/pdg/releases/download/v0.2.1/pdg_Darwin_x86_64.tar.gz"
+      sha256 "7175859329a52a65ecc79c1c4ba81178ea6f071917b5e61d6c5f403f5761785b"
     end
   end
 
