@@ -2,9 +2,9 @@
 # frozen_string_literal: true
 
 cask "satsat" do
-  version "0.6"
-  sha256 arm:   "9c1db176362a135b3694f9bc3b40276f901333b70bacdb92ad304bc7538b062d",
-         intel: "1d9e990dae0ab6ed2f1ff78ab07b405cf5b2011d6a0b85a14ef64b1b2fddcaba"
+  version "0.6.1"
+  sha256 arm:   "a4208dc22a131f9149946eb1bbd36cfe6f561c987fd03c0895bf65df06ab9162",
+         intel: "f5e284a7df235cb0a87d385ee53df4a8b720556bf6afcc6f4a7f40d611f0ba31"
 
   on_arm do
     url "https://github.com/akhenakh/gosatsat/releases/download/v#{version}/satsat_#{version}_Darwin_arm64.tar.gz"
