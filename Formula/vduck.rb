@@ -31,4 +31,8 @@ class Vduck < Formula
   def install
     bin.install "vduck"
   end
+
+  test do
+    assert_match "flag provided but not defined", shell_output("#{bin}/vduck -bogus 2>&1", 2)
+  end
 end

@@ -27,4 +27,8 @@ class Wpail < Formula
   def install
     bin.install "wpail"
   end
+
+  test do
+    assert_match "usage:", shell_output("#{bin}/wpail -h 2>&1")
+  end
 end

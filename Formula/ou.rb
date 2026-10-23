@@ -31,4 +31,8 @@ class Ou < Formula
   def install
     bin.install "ou"
   end
+
+  test do
+    assert_match "flag provided but not defined", shell_output("#{bin}/ou -bogus 2>&1", 2)
+  end
 end
