@@ -2,9 +2,9 @@
 # frozen_string_literal: true
 
 cask "gmid" do
-  version "0.2.1"
-  sha256 arm:   "a1d6a1283bae9a3af1446e7643f76eb2a3a093d8fc66211008b226f1af5374d1",
-         intel: "120ddd352b79a55b928af6676705b72cd5eb9056f19185e0d2e7ff7aa7d7f236"
+  version "0.2.2"
+  sha256 arm:   "b6dba8bb23ace459d2524b05e2c29272011bc7363de0d622ce2a76a8387cf232",
+         intel: "5eb1d01d4669d11840af0ce75afb199c2daf0af5fb9023198ad903295bcdb6aa"
 
   on_arm do
     url "https://github.com/akhenakh/gmid/releases/download/v#{version}/gmid_#{version}_Darwin_arm64.tar.gz"
