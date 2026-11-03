@@ -3,8 +3,8 @@
 
 cask "gmid" do
   version "0.1"
-  sha256 arm:   "5d49855c071dfb47a033eb6e4d726d6ebe46048620691cc91dadc08b1328a3f9",
-         intel: "fa61840c674a01625e4ca76c28a632132100d48686be178c3eb162ff9728da01"
+  sha256 arm:   "34044ad6b8937d90938ef405ca3a92b87b846fc787d85c2b6c7ebc182a85508f",
+         intel: "5253f32815d89a75ca3b0723bc15142cfe34177d08a49f205d6c85adeee00289"
 
   on_arm do
     url "https://github.com/akhenakh/gmid/releases/download/v#{version}/gmid_#{version}_Darwin_arm64.tar.gz"
