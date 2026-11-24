@@ -1,5 +1,7 @@
 # Akhenakh Tap
 
+Homebrew on Linux is not supported: every formula and cask here targets macOS.
+
 ## How do I install these formulae?
 
 `brew install akhenakh/tap/<formula>`

@@ -4,12 +4,17 @@
 class Ovr < Formula
   desc "CLI tool to pipe anything into and apply transformations with an advanced UI"
   homepage "https://github.com/akhenakh/ovr"
+  # Apple Silicon is the default; on_intel overrides it.
+  url "https://github.com/akhenakh/ovr/releases/download/v0.7/ovr_Darwin_arm64.tar.gz"
+  sha256 "21905c844f206366c6dc3c24b42a979386b5f517772ea789b21a343a7c274145"
   license "MIT"
+
+  # Homebrew on Linux is not supported; Linux users install the release
+  # tarball directly.
+  depends_on :macos
 
   on_macos do
     on_arm do
-      url "https://github.com/akhenakh/ovr/releases/download/v0.7/ovr_Darwin_arm64.tar.gz"
-      sha256 "21905c844f206366c6dc3c24b42a979386b5f517772ea789b21a343a7c274145"
       resource "ovrui" do
         version "v0.7"
         url "https://github.com/akhenakh/ovr/releases/download/v0.7/ovrui_Darwin_arm64.tar.gz"
@@ -22,34 +27,9 @@ class Ovr < Formula
     end
   end
 
-  on_linux do
-    on_arm do
-      url "https://github.com/akhenakh/ovr/releases/download/v0.7/ovr_Linux_arm64.tar.gz"
-      sha256 "c75d51084a49ca2d0093af3702d4205f07309ee0883e8c4ffec9d0c01e6678bd"
-      resource "ovrui" do
-        version "v0.7"
-        url "https://github.com/akhenakh/ovr/releases/download/v0.7/ovrui_Linux_arm64.tar.gz"
-        sha256 "a84a98e86c3485bc8f793e6c52005e97e26d6cfb12873cc14305470150a664d1"
-      end
-    end
-    on_intel do
-      url "https://github.com/akhenakh/ovr/releases/download/v0.7/ovr_Linux_x86_64.tar.gz"
-      sha256 "7b87cd5dc09c08c47b972188cb9766d3ea95304188c604e412a6035e8535bf4a"
-      resource "ovrui" do
-        version "v0.7"
-        url "https://github.com/akhenakh/ovr/releases/download/v0.7/ovrui_Linux_x86_64.tar.gz"
-        sha256 "ed062636804ecc9563b7420f22b5b581a15262d3f81718e539b5f54cd851b8f1"
-      end
-    end
-  end
-
   def install
     bin.install "ovr"
-    if OS.mac? && Hardware::CPU.arm?
-      resource("ovrui").stage { bin.install "ovrui" }
-    elsif OS.linux?
-      resource("ovrui").stage { bin.install "ovrui" }
-    end
+    resource("ovrui").stage { bin.install "ovrui" } if Hardware::CPU.arm?
   end
 
   test do
